@@ -6,11 +6,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&family=Poppins:wght@300;400&family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/mystyle.css">
 
-    <title>Kyle Whittle</title>
+    <title>Kyle Whittle — Contact</title>
     <meta name="description" content="Get in touch with Kyle Whittle to discuss customer education, onboarding systems, or training operations.">
     <meta property="og:title" content="Kyle Whittle — Contact">
     <meta property="og:description" content="Get in touch with Kyle Whittle to discuss customer education, onboarding systems, or training operations.">
@@ -19,96 +19,104 @@
   <body>
 
     <!-- HEADER -->
-    <header class="site-header">
-      <div class="container">
-        <div id="title">
-          <h1>Kyle Whittle</h1>
-        </div>
+    <header class="site-header" id="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="header-logo">Kyle Whittle</a>
         <nav>
           <ul class="navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
           </ul>
         </nav>
+        <button class="nav-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
 
-    <!-- PAGE HERO -->
-    <div class="jumbotron-sm">
-      <div class="container">
-        <h1>Start a Conversation <small>I respond to every inquiry personally, usually within 24 hours</small></h1>
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="page-header-inner">
+        <span class="page-header-eyebrow">Contact</span>
+        <h1>Start a Conversation</h1>
+        <p class="subtitle">I respond to every inquiry personally, usually within 24 hours.</p>
       </div>
     </div>
 
     <!-- CONTACT FORM + INFO -->
-    <div class="container">
-      <div class="contact-grid">
+    <section class="section-light">
+      <div class="container">
+        <div class="contact-grid fade-up">
 
-        <div class="form-panel">
-          <!-- NOTE: Replace REPLACE_WITH_YOUR_ID with your Formspree form ID.
-               Sign up free at formspree.io → New Form → copy the ID from the endpoint URL. -->
-          <form action="https://formspree.io/f/xaqlrydl" method="POST">
-            <input type="hidden" name="_subject" value="New inquiry from Kyle Whittle site">
-            <input type="hidden" name="_next" value="thankyou.html">
-            <div class="form-row">
+          <div class="form-panel">
+            <form action="https://formspree.io/f/xaqlrydl" method="POST">
+              <input type="hidden" name="_subject" value="New inquiry from Kyle Whittle site">
+              <input type="hidden" name="_next" value="thankyou.html">
+              <div class="form-row">
 
-              <div>
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+                <div>
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="you@company.com" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="subject">What's this about?</label>
+                    <select id="subject" name="subject" class="form-control" required>
+                      <option value="" selected>Choose one</option>
+                      <option value="Instructional Design">Instructional Design</option>
+                      <option value="Customer Enablement">Customer Enablement</option>
+                      <option value="Technical Writing">Technical Writing</option>
+                      <option value="Psychometrics">Psychometrics</option>
+                      <option value="Data Visualization">Data Visualization</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
                 </div>
 
-                <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                <div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" name="message" placeholder="Tell me about what you're working on..." maxlength="250" rows="9"></textarea>
+                    <p id="characterLeft" class="character-count">250 characters left</p>
+                  </div>
                 </div>
 
-                <div class="form-group">
-                  <label for="subject">Subject</label>
-                  <select id="subject" name="subject" class="form-control" required>
-                    <option value="na" selected>Choose One:</option>
-                    <option value="service">Instructional Design</option>
-                    <option value="suggestions">Customer Enablement</option>
-                    <option value="product">Technical Writing</option>
-                    <option value="product">Psychometrics</option>
-                    <option value="product">Data Visualization</option>
-                  </select>
-                </div>
               </div>
 
-              <div>
-                <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea class="form-control" id="message" placeholder="Message" maxlength="250" rows="8"></textarea>
-                  <p id="characterLeft" class="character-count">You have reached the limit</p>
-                </div>
+              <div class="form-actions">
+                <button type="submit" class="btn-primary" id="btnContactUs">Send Message</button>
               </div>
+            </form>
+          </div>
 
-            </div>
+          <div class="contact-info">
+            <legend>Location</legend>
+            <address>
+              <strong>Whittle Design Group</strong>
+              <p>Cleveland, Ohio</p>
+            </address>
+            <legend style="margin-top:1.5rem">Email</legend>
+            <address>
+              <a href="mailto:kbwhittle88@gmail.com">kbwhittle88@gmail.com</a>
+            </address>
+            <legend style="margin-top:1.5rem">LinkedIn</legend>
+            <address>
+              <a href="https://www.linkedin.com/in/kwhittle88" target="_blank" rel="noopener">/in/kwhittle88 &rarr;</a>
+            </address>
+          </div>
 
-            <div class="form-actions">
-              <button type="submit" class="btn btn-primary" id="btnContactUs">Send Message</button>
-            </div>
-          </form>
         </div>
-
-        <div class="contact-info">
-          <legend>My Location</legend>
-          <address>
-            <strong>Whittle Design Group</strong><br>
-            Cleveland, Ohio
-          </address>
-          <address>
-            <strong>Email</strong><br>
-            <a href="mailto:kbwhittle88@gmail.com">kbwhittle88@gmail.com</a>
-          </address>
-        </div>
-
       </div>
-    </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>
@@ -116,30 +124,31 @@
         <div class="footer-grid">
 
           <div class="footer-col">
-            <h6>About Me</h6>
-            <img class="profile-pic" src="images/kylew2pic.png" alt="Kyle Whittle">
-            <p>Hello. My name is <strong>Kyle</strong>. I live in <strong>Cleveland, Ohio.</strong> I help SaaS companies build the customer education systems their teams actually use — from onboarding programs to knowledge bases to certification courses.</p>
+            <h6>Kyle Whittle</h6>
+            <p>Director of Customer Onboarding &amp; Training Operations. I help SaaS companies build the customer education systems their teams actually use.</p>
+            <p style="margin-top:1rem">Cleveland, Ohio</p>
           </div>
 
           <div class="footer-col">
             <h6>Services</h6>
-            <p><a href="#!">Instructional Design</a></p>
-            <p><a href="#!">Project Management</a></p>
-            <p><a href="#!">Enterprise Corporate Training</a></p>
-            <p><a href="#!">Technical Writing</a></p>
+            <p><a href="index.html">Customer Education</a></p>
+            <p><a href="index.html">Knowledge Operations</a></p>
+            <p><a href="index.html">Onboarding Systems</a></p>
+            <p><a href="index.html">Technical Writing</a></p>
           </div>
 
           <div class="footer-col">
-            <h6>Useful Links</h6>
+            <h6>Navigation</h6>
             <p><a href="portfolio.html">Portfolio</a></p>
             <p><a href="resume.html">Resume</a></p>
-            <p><a href="index.html">Home</a></p>
+            <p><a href="about.html">About</a></p>
+            <p><a href="contact.html">Contact</a></p>
           </div>
 
           <div class="footer-col">
             <h6>Contact</h6>
             <p>Cleveland, Ohio</p>
-            <p>kbwhittle88@gmail.com</p>
+            <p><a href="mailto:kbwhittle88@gmail.com">kbwhittle88@gmail.com</a></p>
           </div>
 
         </div>
@@ -147,9 +156,9 @@
         <hr>
 
         <div class="footer-bottom">
-          <p>© 2026 Copyright</p>
+          <p>&copy; 2026 Kyle Whittle</p>
           <div class="footer-social">
-            <a href="https://www.linkedin.com/in/kwhittle88" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/kwhittle88" target="_blank" rel="noopener">LinkedIn &rarr;</a>
           </div>
         </div>
       </div>
