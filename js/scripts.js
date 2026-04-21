@@ -226,3 +226,25 @@ document.addEventListener('keydown', (e) => {
     document.querySelectorAll('.portfolio-modal.is-open').forEach(closeModal);
   }
 });
+
+/* ============================================================
+   PRO GALLERY — cycling image gallery for professional cards
+   ============================================================ */
+document.querySelectorAll('.pro-gallery').forEach((gallery) => {
+  const imgs = gallery.dataset.images.split(',');
+  const imgEl = gallery.querySelector('.pro-gallery-img');
+  const counter = gallery.querySelector('.pro-gallery-counter');
+  let current = 0;
+
+  gallery.querySelector('.pro-gallery-prev').addEventListener('click', () => {
+    current = (current - 1 + imgs.length) % imgs.length;
+    imgEl.src = imgs[current];
+    counter.textContent = `${current + 1} / ${imgs.length}`;
+  });
+
+  gallery.querySelector('.pro-gallery-next').addEventListener('click', () => {
+    current = (current + 1) % imgs.length;
+    imgEl.src = imgs[current];
+    counter.textContent = `${current + 1} / ${imgs.length}`;
+  });
+});

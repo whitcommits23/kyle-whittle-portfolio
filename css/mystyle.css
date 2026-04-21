@@ -913,6 +913,20 @@ footer hr { border: none; border-top: 1px solid var(--border-dark); margin: 0; }
 }
 .pro-portfolio-placeholder span { font-family: var(--font-serif); font-size: 1.5rem; opacity: 0.3; }
 
+/* Pro gallery */
+.pro-gallery { position: relative; }
+.pro-gallery-img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: var(--r-sm); display: block; }
+.pro-gallery-controls {
+  display: flex; align-items: center; justify-content: center; gap: 0.75rem;
+  padding: 0.5rem 0;
+  font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted);
+}
+.pro-gallery-prev, .pro-gallery-next {
+  background: none; border: 1px solid var(--border-light); border-radius: var(--r-sm);
+  padding: 0.2rem 0.5rem; cursor: pointer; font-size: 0.8rem; color: var(--muted);
+}
+.pro-gallery-prev:hover, .pro-gallery-next:hover { border-color: var(--ink); color: var(--ink); }
+
 /* Well */
 .well {
   background: var(--cream);
