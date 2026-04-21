@@ -850,6 +850,7 @@ footer hr { border: none; border-top: 1px solid var(--border-dark); margin: 0; }
   margin-bottom: 2.5rem;
 }
 .portfolio-row.four-col { grid-template-columns: repeat(4, 1fr); }
+.portfolio-row.two-col  { grid-template-columns: repeat(2, 1fr); }
 
 .portfolio-item { margin: 0; }
 .portfolio-link {
@@ -912,6 +913,15 @@ footer hr { border: none; border-top: 1px solid var(--border-dark); margin: 0; }
   border-radius: var(--r-sm);
 }
 .pro-portfolio-placeholder span { font-family: var(--font-serif); font-size: 1.5rem; opacity: 0.3; }
+
+/* Pro card image — bare img tags in professional cards */
+.pro-card-img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  border-radius: var(--r-sm);
+}
 
 /* Pro gallery */
 .pro-gallery { position: relative; }
@@ -1251,7 +1261,8 @@ footer hr { border: none; border-top: 1px solid var(--border-dark); margin: 0; }
   .fun-fact:first-child { border-top: none; padding-top: 0; }
   .testimonials-grid  { grid-template-columns: 1fr; }
   .portfolio-row,
-  .portfolio-row.four-col { grid-template-columns: repeat(2, 1fr); }
+  .portfolio-row.four-col,
+  .portfolio-row.two-col  { grid-template-columns: repeat(2, 1fr); }
   .footer-grid    { grid-template-columns: 1fr 1fr; }
   .resume-grid    { grid-template-columns: 1fr; gap: 2rem; }
   .contact-grid   { grid-template-columns: 1fr; }
@@ -1284,6 +1295,7 @@ footer hr { border: none; border-top: 1px solid var(--border-dark); margin: 0; }
   .case-studies-grid,
   .process-grid,
   .portfolio-row,
-  .portfolio-row.four-col { grid-template-columns: 1fr; }
+  .portfolio-row.four-col,
+  .portfolio-row.two-col  { grid-template-columns: 1fr; }
   .footer-grid            { grid-template-columns: 1fr; }
 }

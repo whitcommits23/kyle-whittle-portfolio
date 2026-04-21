@@ -236,13 +236,15 @@ document.querySelectorAll('.pro-gallery').forEach((gallery) => {
   const counter = gallery.querySelector('.pro-gallery-counter');
   let current = 0;
 
-  gallery.querySelector('.pro-gallery-prev').addEventListener('click', () => {
+  gallery.querySelector('.pro-gallery-prev').addEventListener('click', (e) => {
+    e.stopPropagation();
     current = (current - 1 + imgs.length) % imgs.length;
     imgEl.src = imgs[current];
     counter.textContent = `${current + 1} / ${imgs.length}`;
   });
 
-  gallery.querySelector('.pro-gallery-next').addEventListener('click', () => {
+  gallery.querySelector('.pro-gallery-next').addEventListener('click', (e) => {
+    e.stopPropagation();
     current = (current + 1) % imgs.length;
     imgEl.src = imgs[current];
     counter.textContent = `${current + 1} / ${imgs.length}`;
