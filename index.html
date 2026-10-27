@@ -3,12 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
     <title>Kyle Whittle</title>
     <meta name="description" content="Customer experience and operations leader. I build AI into customer-facing teams and measure what it returns. 10+ years in B2B SaaS across knowledge, support, and onboarding.">
@@ -17,308 +13,186 @@
     <meta property="og:type" content="website">
   </head>
   <body>
+    <a class="skip" href="#main">Skip to content</a>
 
-    <!-- HEADER -->
-    <header class="site-header" id="site-header">
-      <div class="header-inner">
-        <a href="index.html" class="header-logo">Kyle Whittle</a>
-        <nav>
-          <ul class="navigation">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <nav aria-label="Pages">
+      <ul class="tabs">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Work</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="page"><div class="wrap">
+
+      <header class="runhead">
+        <a href="index.html" class="logo" aria-label="Kyle Whittle, home">
+          <svg width="46" height="36" viewBox="0 0 46 36" aria-hidden="true" focusable="false">
+            <rect x="0" y="0" width="38" height="36" rx="3" fill="#161C24"/>
+            <path d="M36 5 H43 a3 3 0 0 1 3 3 V20 a3 3 0 0 1 -3 3 H36 Z" fill="#2448C9"/>
+            <text x="19" y="25.5" text-anchor="middle">KW</text>
+          </svg>
+        </a>
+        <span>Customer education and knowledge ops</span>
+      </header>
+
+      <main id="main">
+
+        <!-- COVER -->
+        <section class="cover">
+          <div>
+            <h1>Kyle Whittle</h1>
+            <p class="lede">I build the systems that teach customers how to use software, and I write the code behind them.</p>
+            <p class="where">Associate Director of Customer Knowledge and Content Strategy at Entrata. 10+ years in B2B SaaS, with time at McMaster-Carr, Qualtrics and Canopy. Bastrop, Texas.</p>
+          </div>
+          <nav class="contents" aria-label="Contents">
+            <h2>Contents</h2>
+            <ol>
+              <li><a href="#pipelines">AI pipelines for content work <span class="pg">Entrata</span></a></li>
+              <li><a href="#knowledge">Knowledge and content ops <span class="pg">Entrata</span></a></li>
+              <li><a href="#onboarding">Onboarding and support <span class="pg">Canopy</span></a></li>
+              <li><a href="#education">Customer education <span class="pg">Qualtrics</span></a></li>
+            </ol>
+          </nav>
+        </section>
+
+        <!-- HOW I WORK -->
+        <section class="sec">
+          <div class="margin after">
+            <blockquote class="note">"His ability to break down complex data sets and concepts and make them easily accessible to senior leadership helped build consensus and a clear path forward."
+              <cite>Aaron Bestic, Operations Leader, McMaster-Carr</cite></blockquote>
+          </div>
+          <div>
+            <h2>How I work</h2>
+            <p>I organize chaos where customer signals, operations, and how people actually learn software all meet. For 10+ years I've built the systems that get customers to value faster and keep them there.</p>
+            <p>I write the code behind the dashboards. At Entrata I built a 4-agent AI pipeline in Python and GitHub that pulls patterns from customer data, surfaces where people get stuck, and routes the findings to close the gap before it compounds.</p>
+            <p>The approach is always the same. Find where customers get stuck, trace it back to where it could have been prevented, fix it there, and build something that doesn't need reinventing next quarter.</p>
+          </div>
+        </section>
+
+        <!-- KEY FIGURES -->
+        <section class="sec">
+          <div class="margin">
+            <h4>Key figures</h4>
+            <p>Each one is covered in its own entry below.</p>
+          </div>
+          <table class="figures">
+            <tr><td class="num">62%</td><td>Less time on standard content updates, from a 4-agent AI pipeline I built</td></tr>
+            <tr><td class="num">60%</td><td>Of support tickets traceable to documentation, deflected by the library my team ran</td></tr>
+            <tr><td class="num">40%</td><td>Drop in churn I contributed to at Canopy</td></tr>
+            <tr><td class="num">$1.6MM</td><td>Revenue from a learning platform I launched at Qualtrics</td></tr>
+          </table>
+        </section>
+
+        <!-- AI PIPELINES -->
+        <section class="sec" id="pipelines">
+          <div class="margin">
+            <h4>Entrata</h4>
+            <p>Python, GitHub, Zendesk</p>
+          </div>
+          <div>
+            <h3>AI pipelines for content work</h3>
+            <dl class="entry">
+              <dt>Problem</dt>
+              <dd>A Zendesk knowledge base at 3,500+ articles across 60+ product lines. Manual updates ate the team's time.</dd>
+              <dt>Approach</dt>
+              <dd>Production pipelines built in Python and GitHub, with real version control behind them. Four specialized agents pull patterns from customer data, surface where people get stuck, and route the findings so the gap gets closed.</dd>
+              <dt>Result</dt>
+              <dd>Standard updates <mark>62% faster</mark>, 8 hours down to 3, across 80% of the work. Complex drafting went from <mark>14 hours to 90 minutes</mark>. That's 8+ hours per cycle back to the team.</dd>
+            </dl>
+          </div>
+        </section>
+
+        <!-- KNOWLEDGE OPS -->
+        <section class="sec" id="knowledge">
+          <div class="margin">
+            <h4>Entrata</h4>
+            <p>Zendesk, Jira, KCS</p>
+          </div>
+          <div>
+            <h3>Knowledge and content ops</h3>
+            <dl class="entry">
+              <dt>Problem</dt>
+              <dd>A large help center with no reliable way to tell which content was working, and SME bottlenecks slowing every release.</dd>
+              <dt>Approach</dt>
+              <dd>Ran the Zendesk Copenhagen to Lotus migration, rebuilt the taxonomy, applied KCS methodology and content signal scoring, and stood up a Jira content workflow with clear SLAs. Publishing now follows the release calendar.</dd>
+              <dt>Result</dt>
+              <dd>The library deflects <mark>60% of support tickets</mark> traceable to documentation. Content turnaround is 35% faster, and self-service rose 25% year over year.</dd>
+            </dl>
+          </div>
+        </section>
+
+        <!-- ONBOARDING -->
+        <section class="sec" id="onboarding">
+          <div class="margin">
+            <h4>Canopy</h4>
+            <p>Accounting and tax software</p>
+            <blockquote class="note">"He's resourceful, sharp, and doesn't shy away from ambiguity. In fact, he thrives in it."
+              <cite>Michelle Overdevest, Product Marketing, Canopy</cite></blockquote>
+          </div>
+          <div>
+            <h3>Onboarding and support</h3>
+            <dl class="entry">
+              <dt>Problem</dt>
+              <dd>No structured onboarding. New customers were left to figure out the product on their own, which drove early churn and buried support.</dd>
+              <dt>Approach</dt>
+              <dd>Grew the onboarding org from 1 to 30 and built the stack from scratch: knowledge base, LMS, video library, and 2 certification programs. Put 900 to 1,000 customers a year through a repeatable program.</dd>
+              <dt>Result</dt>
+              <dd>Onboarding went from <mark>3 to 4 months down to 30 to 60 days</mark>. Churn dropped <mark>40%</mark>, and onboarding efficiency rose 30%.</dd>
+            </dl>
+          </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="sec" id="education">
+          <div class="margin">
+            <h4>Qualtrics</h4>
+            <p>Skilljar</p>
+          </div>
+          <div>
+            <h3>Customer education</h3>
+            <dl class="entry">
+              <dt>Problem</dt>
+              <dd>Instructor-led training couldn't keep pace with customer growth across global markets.</dd>
+              <dt>Approach</dt>
+              <dd>Built and launched Experience Basecamp on Skilljar. Digitized 70+ courses into guided pathways and created a certification customers could complete on demand.</dd>
+              <dt>Result</dt>
+              <dd><mark>$1.6MM in revenue</mark> over 24 months, 130% of expansion targets, and 250K employees reached.</dd>
+            </dl>
+          </div>
+        </section>
+
+        <!-- CLOSE -->
+        <section class="sec">
+          <div class="margin">
+            <h4>Working together</h4>
+          </div>
+          <div>
+            <h2>Compare notes</h2>
+            <p>If you're building or growing a customer education, support or knowledge function, I'm glad to trade notes. I'm also available for select consulting engagements.</p>
+            <div class="actions">
+              <a href="contact.html" class="btn">Get in touch</a>
+              <a href="portfolio.html" class="btn alt">See the work</a>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="colophon">
+        <div><strong>Kyle Whittle</strong></div>
+        <div>
+          <p>Bastrop, Texas. <a href="mailto:kbwhittle88@gmail.com">kbwhittle88@gmail.com</a></p>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/kwhittle88" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="files/Kyle_Whittle_Resume_KnowledgeOps.pdf">Resume (PDF)</a></li>
+            <li>&copy; 2026</li>
           </ul>
-        </nav>
-        <button class="nav-toggle" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero" id="hero">
-      <div class="hero-inner">
-        <div class="hero-eyebrow">AI automation · Customer experience &amp; operations · 10+ years in B2B SaaS</div>
-        <h1 class="hero-title">I build AI that makes<br>customer operations<br>faster and cheaper.</h1>
-        <div class="hero-rule"></div>
-        <p class="hero-subtitle">10+ years in B2B SaaS leading knowledge, support, and onboarding, with the automation built in-house to back it up.</p>
-        <div class="hero-actions">
-          <a href="contact.html" class="btn-primary">Work With Me</a>
-          <a href="portfolio.html" class="btn-ghost">See Portfolio</a>
         </div>
-      </div>
-      <div class="hero-scroll">
-        <span>Scroll</span>
-        <div class="hero-scroll-line"></div>
-      </div>
-    </section>
+      </footer>
 
-    <!-- LOGO STRIP -->
-    <div class="logo-strip">
-      <div class="container">
-        <span class="logo-strip-label">Experience from</span>
-        <div class="logo-strip-names">
-          <span>McMaster-Carr</span>
-          <span>Qualtrics</span>
-          <span>Canopy</span>
-          <span>Entrata</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- MY ANGLE -->
-    <section class="section-cream">
-      <div class="container">
-        <div class="section-header fade-up">
-          <span class="section-label">My Angle</span>
-          <h2 class="section-title">I'm the rare CX leader who builds the AI.</h2>
-        </div>
-        <div class="fade-up" style="max-width:780px;margin:0 auto;font-size:1.0625rem;line-height:1.7">
-          <p>I organize chaos where customer signals, operations, and how people actually learn software all meet. For 10+ years I've built the systems that get customers to value faster and keep them there.</p>
-          <p>Plenty of CX and ops leaders can read a dashboard. I write the code behind it. At Entrata I built a 4-agent AI pipeline in Python and GitHub that pulls patterns from customer data, surfaces where people get stuck, and routes the findings to close the gap before it compounds.</p>
-          <p>The approach is always the same. Find where customers get stuck, trace it back to where it could have been prevented, fix it there, and build something that doesn't need reinventing next quarter.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section class="section-light" id="services">
-      <div class="container">
-        <div class="section-header fade-up">
-          <span class="section-label">What I Do</span>
-          <h2 class="section-title">My services</h2>
-        </div>
-        <div class="services-grid fade-up">
-
-          <div>
-            <h4>AI pipelines for customer operations</h4>
-            <p>Production pipelines I build in Python and GitHub, with real version control behind them. At Entrata, 4 specialized agents cut standard article updates 62% (8 hours to 3, across 80% of the work) and dropped complex drafting from 14 hours to 90 minutes. That's 8+ hours per cycle back to the team.</p>
-          </div>
-
-          <div>
-            <h4>Knowledge &amp; content operations</h4>
-            <p>Governing content at scale. 3,500+ help articles across 60+ product lines, release-aligned publishing, KCS methodology, and content signal scoring. The library my team runs deflects 60% of support tickets traceable to documentation.</p>
-          </div>
-
-          <div>
-            <h4>Customer onboarding &amp; support</h4>
-            <p>Building the teams and systems that get customers to value fast. At Canopy I grew an onboarding org from 1 to 30, cut onboarding from 3-4 months to 30-60 days, and put 900-1,000 customers a year through a repeatable program.</p>
-          </div>
-
-          <div>
-            <h4>Customer education &amp; learning systems</h4>
-            <p>Curriculum, LMS configuration, and certification programs designed from learning objectives through measurable outcomes. At Qualtrics, Experience Basecamp generated $1.6MM over 24 months and reached 250K employees.</p>
-          </div>
-
-        </div>
-
-        <p class="engagement-note fade-up" style="margin-top:2.5rem">Available for consulting engagements, fractional leadership, and full-time roles. &nbsp;<a href="contact.html">Get in touch &rarr;</a></p>
-      </div>
-    </section>
-
-    <!-- STATS -->
-    <section class="section-dark">
-      <div class="container">
-        <div class="section-header fade-up">
-          <span class="section-label section-label-dark">By the Numbers</span>
-          <h2 class="section-title section-title-dark">Results that compound.</h2>
-        </div>
-        <div class="stats-grid">
-
-          <div class="fun-fact fade-up">
-            <span class="stat-number" data-target="62" data-suffix="%">62%</span>
-            <h4>Less content work, from a 4-agent AI pipeline I built</h4>
-          </div>
-
-          <div class="fun-fact fade-up" style="transition-delay:0.1s">
-            <span class="stat-number" data-target="60" data-suffix="%">60%</span>
-            <h4>Support tickets deflected through documentation</h4>
-          </div>
-
-          <div class="fun-fact fade-up" style="transition-delay:0.2s">
-            <span class="stat-number" data-target="40" data-suffix="%">40%</span>
-            <h4>Churn reduction I contributed to at Canopy</h4>
-          </div>
-
-          <div class="fun-fact fade-up" style="transition-delay:0.3s">
-            <span class="stat-number" data-target="1.6" data-prefix="$" data-suffix="MM" data-decimals="1">$1.6MM</span>
-            <h4>Revenue from a learning platform I launched at Qualtrics</h4>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW I WORK -->
-    <section class="section-cream">
-      <div class="container">
-        <div class="section-header fade-up">
-          <span class="section-label">My Process</span>
-          <h2 class="section-title">How I Work</h2>
-        </div>
-        <div class="process-grid fade-up">
-
-          <div class="process-step">
-            <div class="process-step-number">01</div>
-            <h4>Find</h4>
-            <p>Where customers actually get stuck. I read the tickets, the signals, and the content gaps before touching a tool.</p>
-          </div>
-
-          <div class="process-step">
-            <div class="process-step-number">02</div>
-            <h4>Trace</h4>
-            <p>Back to where the problem could have been prevented. The fix usually lives upstream of where the pain shows up.</p>
-          </div>
-
-          <div class="process-step">
-            <div class="process-step-number">03</div>
-            <h4>Fix</h4>
-            <p>At the source. Often that means building the automation, the content system, or the SOP that closes the gap for good.</p>
-          </div>
-
-          <div class="process-step">
-            <div class="process-step-number">04</div>
-            <h4>Build to last</h4>
-            <p>So it doesn't need reinventing next quarter. KPIs and feedback loops keep it honest after I'm gone.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CASE STUDIES -->
-    <section class="section-light">
-      <div class="container">
-        <div class="section-header fade-up">
-          <span class="section-label">Case Studies</span>
-          <h2 class="section-title">What it looks like in practice.</h2>
-        </div>
-        <div class="case-studies-grid">
-
-          <div class="case-study-card fade-up">
-            <span class="cs-company">Entrata</span>
-            <span class="cs-label">Challenge</span>
-            <p>A Zendesk knowledge base at 3,500+ articles across 60+ product lines. Manual updates ate the team's time, and self-service was hard to measure.</p>
-            <span class="cs-label">Approach</span>
-            <p>Built a 4-agent AI pipeline in Python and GitHub. Ran the Zendesk Copenhagen to Lotus migration, rebuilt the taxonomy, applied KCS methodology, and stood up a Jira content workflow with clear SLAs. Self-service rose 25% year over year.</p>
-            <span class="cs-label">Result</span>
-            <p class="cs-result">Standard updates 62% faster (8 hrs to 3) &bull; complex drafting 14 hrs to 90 min &bull; 60% ticket deflection</p>
-          </div>
-
-          <div class="case-study-card fade-up" style="transition-delay:0.1s">
-            <span class="cs-company">Canopy</span>
-            <span class="cs-label">Challenge</span>
-            <p>No structured onboarding ecosystem. New customers were left to figure out the product on their own, driving early churn and overwhelming support.</p>
-            <span class="cs-label">Approach</span>
-            <p>Grew the onboarding org from 1 to 30 and built the stack from scratch: Knowledge Base, LMS, video library, and 2 certification programs. Put 900-1,000 customers a year through a repeatable program.</p>
-            <span class="cs-label">Result</span>
-            <p class="cs-result">Onboarding 3-4 months to 30-60 days &bull; 40% churn reduction &bull; 30% onboarding efficiency</p>
-          </div>
-
-          <div class="case-study-card fade-up" style="transition-delay:0.2s">
-            <span class="cs-company">Qualtrics</span>
-            <span class="cs-label">Challenge</span>
-            <p>Instructor-led training couldn't keep pace with customer growth across global markets. They needed an on-demand education model that could.</p>
-            <span class="cs-label">Approach</span>
-            <p>Built and launched Experience Basecamp on Skilljar, digitizing 70+ courses on guided pathways and creating a certification program customers could complete on demand.</p>
-            <span class="cs-label">Result</span>
-            <p class="cs-result">$1.6MM revenue over 24 months &bull; 130% of expansion targets &bull; 250K employees reached</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="section-dark">
-      <div class="container">
-        <div class="section-header fade-up">
-          <span class="section-label section-label-dark">Testimonials</span>
-          <h2 class="section-title section-title-dark">What people say.</h2>
-        </div>
-        <div class="testimonials-grid">
-
-          <div class="testimonial-card fade-up">
-            <div class="testimonial-avatar">AB</div>
-            <blockquote>
-              "Kyle's analytic skills helped us identify inefficiencies to target as a management team. His ability to break down complex data sets and concepts and make them easily accessible to senior leadership helped build consensus and a clear path forward. His unique blend of strong work ethic with a bit of fun make him a joy to work with."
-            </blockquote>
-            <p class="testimonial-attribution">
-              Aaron Bestic
-              <span>Operations Leader, McMaster-Carr</span>
-            </p>
-          </div>
-
-          <div class="testimonial-card fade-up" style="transition-delay:0.1s">
-            <div class="testimonial-avatar">MO</div>
-            <blockquote>
-              "Kyle is the person you want in the room when there's a complex problem to solve. He has a natural ability to break things down, analyze the data, figure out the smartest path forward, and then roll up his sleeves and get to work. He's resourceful, sharp, and doesn't shy away from ambiguity. In fact, he thrives in it."
-            </blockquote>
-            <p class="testimonial-attribution">
-              Michelle Overdevest
-              <span>Product Marketing, Canopy</span>
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA BANNER -->
-    <div class="cta-banner">
-      <h2>Ready to build something like this?</h2>
-      <p>Whether you're building out a customer experience function or growing the one you have. Let's talk.</p>
-      <a href="contact.html" class="btn-cta">Work With Me &rarr;</a>
-    </div>
-
-    <!-- FOOTER -->
-    <footer>
-      <div class="container">
-        <div class="footer-grid">
-
-          <div class="footer-col">
-            <h6>Kyle Whittle</h6>
-            <p>Customer experience and operations leader. I build AI into customer-facing teams and measure what it returns.</p>
-            <p style="margin-top:1rem">Cleveland, Ohio</p>
-          </div>
-
-          <div class="footer-col">
-            <h6>Services</h6>
-            <p><a href="index.html#services">AI Pipelines</a></p>
-            <p><a href="index.html#services">Knowledge &amp; Content Ops</a></p>
-            <p><a href="index.html#services">Onboarding &amp; Support</a></p>
-            <p><a href="index.html#services">Customer Education</a></p>
-          </div>
-
-          <div class="footer-col">
-            <h6>Navigation</h6>
-            <p><a href="portfolio.html">Portfolio</a></p>
-            <p><a href="resume.html">Resume</a></p>
-            <p><a href="about.html">About</a></p>
-            <p><a href="contact.html">Contact</a></p>
-          </div>
-
-          <div class="footer-col">
-            <h6>Contact</h6>
-            <p>Cleveland, Ohio</p>
-            <p><a href="mailto:kbwhittle88@gmail.com">kbwhittle88@gmail.com</a></p>
-          </div>
-
-        </div>
-
-        <hr>
-
-        <div class="footer-bottom">
-          <p>&copy; 2026 Kyle Whittle</p>
-          <div class="footer-social">
-            <a href="https://www.linkedin.com/in/kwhittle88" target="_blank" rel="noopener">LinkedIn &rarr;</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="js/scripts.js"></script>
+    </div></div>
   </body>
 </html>

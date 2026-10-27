@@ -3,12 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 
     <title>Kyle Whittle: Resume</title>
     <meta name="description" content="Kyle Whittle's experience building AI, knowledge operations, support, and onboarding systems across 10+ years in B2B SaaS.">
@@ -17,291 +13,241 @@
     <meta property="og:type" content="website">
   </head>
   <body>
+    <a class="skip" href="#main">Skip to content</a>
 
-    <!-- HEADER -->
-    <header class="site-header" id="site-header">
-      <div class="header-inner">
-        <a href="index.html" class="header-logo">Kyle Whittle</a>
-        <nav>
-          <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="resume.html" class="active">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <nav aria-label="Pages">
+      <ul class="tabs">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Work</a></li>
+        <li><a href="resume.html" aria-current="page">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="page"><div class="wrap">
+
+      <header class="runhead">
+        <a href="index.html" class="logo" aria-label="Kyle Whittle, home">
+          <svg width="46" height="36" viewBox="0 0 46 36" aria-hidden="true" focusable="false">
+            <rect x="0" y="0" width="38" height="36" rx="3" fill="#161C24"/>
+            <path d="M36 5 H43 a3 3 0 0 1 3 3 V20 a3 3 0 0 1 -3 3 H36 Z" fill="#2448C9"/>
+            <text x="19" y="25.5" text-anchor="middle">KW</text>
+          </svg>
+        </a>
+        <span>Resume</span>
+      </header>
+
+      <main id="main">
+
+        <section class="title">
+          <h1>Professional history</h1>
+          <p class="lede">10+ years building AI, knowledge systems, teams, and operations in B2B SaaS.</p>
+          <div class="actions">
+            <a href="files/Kyle_Whittle_Resume_KnowledgeOps.pdf" class="btn" download>Download the PDF</a>
+            <a href="https://www.linkedin.com/in/kwhittle88" class="btn alt" target="_blank" rel="noopener">View LinkedIn</a>
+          </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <div class="part">
+          <h2>Experience</h2>
+        </div>
+
+        <section class="sec role">
+          <div class="margin">
+            <p class="year">2025</p>
+          </div>
+          <div>
+            <h3>Associate Director, Customer Knowledge &amp; Content Strategy</h3>
+            <p class="org">Entrata</p>
+            <p>Lead product education inside Professional Services. Partner with Training, Implementation, and Support to turn complex product knowledge into resources customers actually use.</p>
+            <ul class="ticks">
+              <li>Built an AI agent pipeline in Python and GitHub with 4 specialized agents that cut standard article updates from 8 hours to 3 (<mark>62% faster</mark> across 80% of the workload) and dropped complex article drafting from 14 hours to 90 minutes. That's 8+ hours per cycle the team now spends on real audits instead of draft cleanup.</li>
+              <li>Set up an AI analysis system across Cursor, Claude, ChatGPT, and Gemini that pulls signal from support tickets, release patterns, and content engagement automatically. Replaced manual analysis that used to need engineering time.</li>
+              <li>Applied KCS methodology and content signal scoring across 3,500+ articles to set deflection KPIs. Investment decisions now have data behind them: accuracy, complexity, and ticket impact.</li>
+              <li>Designed a release-aligned listening strategy that syncs help content, release notes, and in-app tooltips with each product release, built with Product, Training, and Support.</li>
+              <li>Ran the full Zendesk Copenhagen to Lotus migration. Brought in AI-powered search, new taxonomy, and analytics tracking so self-service activation is finally measurable.</li>
+              <li>Built a Jira-driven content workflow that cut turnaround time 35% and ended the recurring SME bottlenecks.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="sec role">
+          <div class="margin">
+            <p class="year">2023</p>
+          </div>
+          <div>
+            <h3>Director, Customer Onboarding &amp; Education</h3>
+            <p class="org">Canopy</p>
+            <p>Led change management for thousands of accounting and tax firms moving onto new systems. Built the teams and infrastructure to get them to value fast, then keep them there.</p>
+            <ul class="ticks">
+              <li>Grew the onboarding and training org from 1 person to 30, running 4 CX teams across global SaaS rollouts supporting 900 to 1,000 customers per year.</li>
+              <li>Cut average onboarding time from <mark>3 to 4 months down to 30 to 60 days</mark> by redesigning the program around customer size and complexity.</li>
+              <li>Contributed to a <mark>40% churn drop</mark> in the first year after the redesign.</li>
+              <li>Built the enablement stack from scratch: Knowledge Base, LMS, video library, and 2 certification programs. Onboarding efficiency up 30%.</li>
+              <li>Set up a closed-loop listening system pulling CSAT and CES signals across Implementation, Training, and Support. Customer friction became trackable action items with owners.</li>
+              <li>Deflected 45%+ of support tickets year over year through AI-driven self-service and chatbot rollout, freeing support to handle the harder calls.</li>
+              <li>Stood up dashboards for customer proficiency, CSAT, and training effectiveness. Those feedback loops directly shaped what content we built next.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="sec role">
+          <div class="margin">
+            <p class="year">2022</p>
+          </div>
+          <div>
+            <h3>Senior Manager, Customer Support</h3>
+            <p class="org">Canopy</p>
+            <p>Led support and enablement across accounting and tax markets. Built the team and knowledge systems that fed into the broader onboarding redesign.</p>
+            <ul class="ticks">
+              <li>Recruited and developed Level 1 and Level 2 support teams across Utah and remote.</li>
+              <li>Held 90%+ customer satisfaction during a 200% surge in support volume.</li>
+              <li>Redesigned multi-channel process flow, cutting ticket queue depth to a third of where it started.</li>
+              <li>Wrote 60+ internal troubleshooting guides and SOPs so new hires could ramp without weeks of shadowing.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="sec role">
+          <div class="margin">
+            <p class="year">2022</p>
+          </div>
+          <div>
+            <h3>Manager, Instructional Design</h3>
+            <p class="org">Canopy</p>
+            <p>Designed customer-facing training and curriculum for a growing SaaS product. Laid the foundation for Canopy's first formal onboarding program.</p>
+            <ul class="ticks">
+              <li>Rebuilt on-demand training from the ground up: 60+ new videos and 2 e-learning courses.</li>
+              <li>Built and ran the customer Knowledge Base in Zendesk.</li>
+              <li>Cut support queries 37% by moving common onboarding questions into short-form video.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="sec role">
+          <div class="margin">
+            <p class="year">2019</p>
+          </div>
+          <div>
+            <h3>Operations Manager</h3>
+            <p class="org">McMaster-Carr, Cleveland, OH</p>
+            <p>Started in the customer contact center, moved into warehouse operations. Led a 25-person team handling 10,000+ daily orders.</p>
+            <ul class="ticks">
+              <li>Redesigned workstation layout and process flow, lifting operational efficiency 25%.</li>
+              <li>Built a predictive staffing model for peak demand, holding 97% SLA through the busy season.</li>
+              <li>Rolled out a new inventory management system that cut order errors 15%.</li>
+              <li>Set the staffing pattern for weekend operations so coverage stopped depending on heroics.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="sec role">
+          <div class="margin">
+            <p class="year">2014</p>
+          </div>
+          <div>
+            <h3>Product Manager, CX Education</h3>
+            <p class="org">Qualtrics, Provo, UT</p>
+            <p>Ran product management for Qualtrics' post-sales education portfolio. Started as Instructional Designer, moved into PM. Built programs that drove adoption and expansion for enterprise customers globally.</p>
+            <ul class="ticks">
+              <li>Partnered with enterprise customers to design VoC programs across NPS, CSAT, and relationship surveys. Turned platform features into customer listening infrastructure that drove retention.</li>
+              <li>Built Qualtrics' first enterprise-wide training program for platform admins and site staff. Became the adoption playbook for global rollouts and closed the gap between configuration and real usage.</li>
+              <li>Created a partnership offering for $1M+ accounts that reached 250,000 employees globally.</li>
+              <li>Launched Experience Basecamp on Skilljar, an on-demand learning platform with 70+ courses on guided pathways. Generated <mark>$1.6MM in revenue</mark> over 24 months.</li>
+              <li>Piloted an analytics curriculum across 20+ priority accounts, hitting 130% of expansion targets.</li>
+              <li>Cut content production time 20% by coaching a 9-person team through a new content strategy.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <div class="part">
+          <h2>Education</h2>
+        </div>
+
+        <section class="sec tight role">
+          <div class="margin"><p class="year">2022</p></div>
+          <div>
+            <h3>Master of Business Administration</h3>
+            <p class="org">Quantic School of Business and Technology</p>
+            <p>Minor in Strategy. 4.0 GPA.</p>
+          </div>
+        </section>
+
+        <section class="sec tight role">
+          <div class="margin"><p class="year">2019</p></div>
+          <div>
+            <h3>Master of Education in Instructional Design</h3>
+            <p class="org">University of Utah</p>
+            <p>Minor in Psychometrics. 3.9 GPA.</p>
+          </div>
+        </section>
+
+        <section class="sec tight role">
+          <div class="margin"><p class="year">2014</p></div>
+          <div>
+            <h3>Bachelor of Science, Industrial/Organizational Psychology</h3>
+            <p class="org">Brigham Young University-Idaho</p>
+            <p>Minor in Statistics. 3.7 GPA.</p>
+          </div>
+        </section>
+
+        <!-- SKILLS -->
+        <div class="part">
+          <h2>Skills and certifications</h2>
+        </div>
+
+        <section class="sec">
+          <div class="margin">
+            <h4>Certifications</h4>
+            <p>Qualtrics CX Certified</p>
+            <p>Anthropic AI Certifications</p>
+          </div>
+          <div class="skills">
+            <div>
+              <h4>Leadership</h4>
+              <ul>
+                <li>Team growth and coaching</li>
+                <li>Change management</li>
+                <li>Cross-functional program leadership</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Onboarding and operations</h4>
+              <ul>
+                <li>Global training operations</li>
+                <li>SOP design and process standardization</li>
+                <li>LMS, CMS and knowledge base</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Analytics and enablement</h4>
+              <ul>
+                <li>KPI development and effectiveness metrics</li>
+                <li>ADDIE and instructional design</li>
+                <li>AI tools: Claude, ChatGPT, Gemini</li>
+                <li>AI agent pipelines (Python and GitHub)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="colophon">
+        <div><strong>Kyle Whittle</strong></div>
+        <div>
+          <p>Bastrop, Texas. <a href="mailto:kbwhittle88@gmail.com">kbwhittle88@gmail.com</a></p>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/kwhittle88" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="files/Kyle_Whittle_Resume_KnowledgeOps.pdf">Resume (PDF)</a></li>
+            <li>&copy; 2026</li>
           </ul>
-        </nav>
-        <button class="nav-toggle" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </header>
-
-    <!-- PAGE HEADER -->
-    <div class="page-header">
-      <div class="page-header-inner">
-        <span class="page-header-eyebrow">Experience</span>
-        <h1>Professional History</h1>
-        <p class="subtitle">10+ years building AI, knowledge systems, teams, and operations in B2B SaaS.</p>
-      </div>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <section class="section-light">
-      <div class="container">
-
-        <img class="profile-pic-resume fade-up" src="images/kylew2pic_trans.png" alt="Kyle Whittle">
-
-        <div class="resume-grid">
-
-          <!-- LEFT: EXPERIENCE -->
-          <div class="fade-up">
-            <div class="timeline">
-              <h2>Professional Experience</h2>
-
-              <div class="event current">
-                <span class="date">2025</span>
-                <h4>Associate Director, Customer Knowledge &amp; Content Strategy</h4>
-                <h5>Entrata</h5>
-                <p>Lead product education inside Professional Services. Partner with Training, Implementation, and Support to turn complex product knowledge into resources customers actually use.</p>
-                <p>• Built an AI agent pipeline in Python and GitHub with 4 specialized agents that cut standard article updates from 8 hours to 3 (62% faster across 80% of the workload) and dropped complex article drafting from 14 hours to 90 minutes. That's 8+ hours per cycle the team now spends on real audits instead of draft cleanup.</p>
-                <p>• Set up an AI analysis system across Cursor, Claude, ChatGPT, and Gemini that pulls signal from support tickets, release patterns, and content engagement automatically. Replaced manual analysis that used to need engineering time.</p>
-                <p>• Applied KCS methodology and content signal scoring across 3,500+ articles to set deflection KPIs. Investment decisions now have data behind them: accuracy, complexity, and ticket impact.</p>
-                <p>• Designed a release-aligned listening strategy that syncs help content, release notes, and in-app tooltips with each product release, built with Product, Training, and Support.</p>
-                <p>• Ran the full Zendesk Copenhagen to Lotus migration. Brought in AI-powered search, new taxonomy, and analytics tracking so self-service activation is finally measurable.</p>
-                <p>• Built a Jira-driven content workflow that cut turnaround time 35% and ended the recurring SME bottlenecks.</p>
-              </div>
-
-              <div class="event">
-                <span class="date">2023</span>
-                <h4>Director, Customer Onboarding &amp; Education</h4>
-                <h5>Canopy</h5>
-                <p>Led change management for thousands of accounting and tax firms moving onto new systems. Built the teams and infrastructure to get them to value fast, then keep them there.</p>
-                <p>• Grew the onboarding and training org from 1 person to 30, running 4 CX teams across global SaaS rollouts supporting 900 to 1,000 customers per year.</p>
-                <p>• Cut average onboarding time from 3 to 4 months down to 30 to 60 days by redesigning the program around customer size and complexity.</p>
-                <p>• Contributed to a 40% churn drop in the first year after the redesign.</p>
-                <p>• Built the enablement stack from scratch: Knowledge Base, LMS, video library, and 2 certification programs. Onboarding efficiency up 30%.</p>
-                <p>• Set up a closed-loop listening system pulling CSAT and CES signals across Implementation, Training, and Support. Customer friction became trackable action items with owners.</p>
-                <p>• Deflected 45%+ of support tickets year over year through AI-driven self-service and chatbot rollout, freeing support to handle the harder calls.</p>
-                <p>• Stood up dashboards for customer proficiency, CSAT, and training effectiveness. Those feedback loops directly shaped what content we built next.</p>
-              </div>
-
-              <div class="event">
-                <span class="date">2022</span>
-                <h4>Senior Manager, Customer Support</h4>
-                <h5>Canopy</h5>
-                <p>Led support and enablement across accounting and tax markets. Built the team and knowledge systems that fed into the broader onboarding redesign.</p>
-                <p>• Recruited and developed Level 1 and Level 2 support teams across Utah and remote.</p>
-                <p>• Held 90%+ customer satisfaction during a 200% surge in support volume.</p>
-                <p>• Redesigned multi-channel process flow, cutting ticket queue depth to a third of where it started.</p>
-                <p>• Wrote 60+ internal troubleshooting guides and SOPs so new hires could ramp without weeks of shadowing.</p>
-              </div>
-
-              <div class="event">
-                <span class="date">2022</span>
-                <h4>Manager, Instructional Design</h4>
-                <h5>Canopy</h5>
-                <p>Designed customer-facing training and curriculum for a growing SaaS product. Laid the foundation for Canopy's first formal onboarding program.</p>
-                <p>• Rebuilt on-demand training from the ground up: 60+ new videos and 2 e-learning courses.</p>
-                <p>• Built and ran the customer Knowledge Base in Zendesk.</p>
-                <p>• Cut support queries 37% by moving common onboarding questions into short-form video.</p>
-              </div>
-
-              <div class="event">
-                <span class="date">2019</span>
-                <h4>Operations Manager</h4>
-                <h5>McMaster-Carr, Cleveland, OH</h5>
-                <p>Started in the customer contact center, moved into warehouse operations. Led a 25-person team handling 10,000+ daily orders.</p>
-                <p>• Redesigned workstation layout and process flow, lifting operational efficiency 25%.</p>
-                <p>• Built a predictive staffing model for peak demand, holding 97% SLA through the busy season.</p>
-                <p>• Rolled out a new inventory management system that cut order errors 15%.</p>
-                <p>• Set the staffing pattern for weekend operations so coverage stopped depending on heroics.</p>
-              </div>
-
-              <div class="event">
-                <span class="date">2014</span>
-                <h4>Product Manager, CX Education</h4>
-                <h5>Qualtrics, Provo, UT</h5>
-                <p>Ran product management for Qualtrics' post-sales education portfolio. Started as Instructional Designer, moved into PM. Built programs that drove adoption and expansion for enterprise customers globally.</p>
-                <p>• Partnered with enterprise customers to design VoC programs across NPS, CSAT, and relationship surveys. Turned platform features into customer listening infrastructure that drove retention.</p>
-                <p>• Built Qualtrics' first enterprise-wide training program for platform admins and site staff. Became the adoption playbook for global rollouts and closed the gap between configuration and real usage.</p>
-                <p>• Created a partnership offering for $1M+ accounts that reached 250,000 employees globally.</p>
-                <p>• Launched Experience Basecamp on Skilljar, an on-demand learning platform with 70+ courses on guided pathways. Generated $1.6MM in revenue over 24 months.</p>
-                <p>• Piloted an analytics curriculum across 20+ priority accounts, hitting 130% of expansion targets.</p>
-                <p>• Cut content production time 20% by coaching a 9-person team through a new content strategy.</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- RIGHT: EDUCATION + SKILLS -->
-          <div class="fade-up" style="transition-delay:0.1s">
-
-            <div class="timeline">
-              <h2>Education</h2>
-
-              <div class="event">
-                <span class="date">2022</span>
-                <h4>Master of Business Administration</h4>
-                <h5>Quantic School of Business and Technology</h5>
-                <p>Minor in Strategy &bull; 4.0 GPA</p>
-              </div>
-
-              <div class="event">
-                <span class="date">2019</span>
-                <h4>Master of Education in Instructional Design</h4>
-                <h5>University of Utah</h5>
-                <p>Minor in Psychometrics &bull; 3.9 GPA</p>
-              </div>
-
-              <div class="event">
-                <span class="date">2014</span>
-                <h4>Bachelor of Science, Industrial/Organizational Psychology</h4>
-                <h5>Brigham Young University-Idaho</h5>
-                <p>Minor in Statistics &bull; 3.7 GPA</p>
-              </div>
-            </div>
-
-            <div style="margin-top:2.5rem">
-              <span class="section-label" style="margin-bottom:1.5rem">Certifications</span>
-              <p style="font-size:0.95rem;margin-top:1rem">Qualtrics CX Certified</p>
-              <p style="font-size:0.95rem;margin-top:0.5rem">Anthropic AI Certifications</p>
-            </div>
-
-            <div style="margin-top:2.5rem">
-              <span class="section-label" style="margin-bottom:1.5rem">Leadership</span>
-
-              <div class="skillset">
-                <div class="skill-unit">
-                  <h4>Team Growth &amp; Coaching</h4>
-                  <div class="bar"><div class="progress" style="width:95%"></div></div>
-                </div>
-              </div>
-              <div class="skillset">
-                <div class="skill-unit">
-                  <h4>Change Management</h4>
-                  <div class="bar"><div class="progress" style="width:90%"></div></div>
-                </div>
-              </div>
-              <div class="skillset">
-                <div class="skill-unit">
-                  <h4>Cross-Functional Program Leadership</h4>
-                  <div class="bar"><div class="progress" style="width:85%"></div></div>
-                </div>
-              </div>
-
-              <span class="section-label" style="margin:2rem 0 1.5rem">Onboarding &amp; Operations</span>
-
-              <div class="skillset">
-                <div class="skill-unit">
-                  <h4>Global Training Operations</h4>
-                  <div class="bar"><div class="progress" style="width:95%"></div></div>
-                </div>
-              </div>
-              <div class="skillset">
-                <div class="skill-unit">
-                  <h4>SOP Design &amp; Process Standardization</h4>
-                  <div class="bar"><div class="progress" style="width:85%"></div></div>
-                </div>
-              </div>
-              <div class="skillset">
-                <div class="skill-unit">
-                  <h4>LMS / CMS / Knowledge Base</h4>
-                  <div class="bar"><div class="progress" style="width:90%"></div></div>
-                </div>
-              </div>
-
-              <span class="section-label" style="margin:2rem 0 1.5rem">Analytics &amp; Enablement</span>
-
-              <div class="skillset">
-                <div class="skill-unit">
-                  <h4>KPI Development &amp; Effectiveness Metrics</h4>
-                  <div class="bar"><div class="progress" style="width:80%"></div></div>
-                </div>
-              </div>
-              <div class="skillset">
-                <div class="skill-unit">
-                  <h4>ADDIE &amp; Instructional Design</h4>
-                  <div class="bar"><div class="progress" style="width:85%"></div></div>
-                </div>
-              </div>
-              <div class="skillset">
-                <div class="skill-unit">
-                  <h4>AI Tools: Claude, ChatGPT, Gemini</h4>
-                  <div class="bar"><div class="progress" style="width:80%"></div></div>
-                </div>
-              </div>
-              <div class="skillset">
-                <div class="skill-unit">
-                  <h4>AI Agent Pipelines (Python + GitHub)</h4>
-                  <div class="bar"><div class="progress" style="width:85%"></div></div>
-                </div>
-              </div>
-
-              <div class="download-button">
-                <h6 style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem">Resume</h6>
-                <p style="font-size:0.875rem;color:var(--muted);margin-bottom:1rem">Download a PDF copy of my resume.</p>
-                <a href="files/Kyle_Whittle_Resume_KnowledgeOps.pdf" class="button" download>Download Resume &rarr;</a>
-              </div>
-
-              <div class="download-button" style="margin-top:1.5rem">
-                <h6 style="font-family:var(--font-mono);font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--amber);margin-bottom:1rem">LinkedIn Profile</h6>
-                <p style="font-size:0.875rem;color:var(--muted);margin-bottom:1rem">View my full profile and connect on LinkedIn.</p>
-                <a href="https://www.linkedin.com/in/kwhittle88" class="button" target="_blank" rel="noopener">View Profile &rarr;</a>
-              </div>
-            </div>
-
-          </div>
-
         </div>
-      </div>
-    </section>
+      </footer>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="container">
-        <div class="footer-grid">
-
-          <div class="footer-col">
-            <h6>Kyle Whittle</h6>
-            <p>Customer experience and operations leader. I build AI into customer-facing teams and measure what it returns.</p>
-            <p style="margin-top:1rem">Cleveland, Ohio</p>
-          </div>
-
-          <div class="footer-col">
-            <h6>Services</h6>
-            <p><a href="index.html#services">AI Pipelines</a></p>
-            <p><a href="index.html#services">Knowledge &amp; Content Ops</a></p>
-            <p><a href="index.html#services">Onboarding &amp; Support</a></p>
-            <p><a href="index.html#services">Customer Education</a></p>
-          </div>
-
-          <div class="footer-col">
-            <h6>Navigation</h6>
-            <p><a href="portfolio.html">Portfolio</a></p>
-            <p><a href="resume.html">Resume</a></p>
-            <p><a href="about.html">About</a></p>
-            <p><a href="contact.html">Contact</a></p>
-          </div>
-
-          <div class="footer-col">
-            <h6>Contact</h6>
-            <p>Cleveland, Ohio</p>
-            <p><a href="mailto:kbwhittle88@gmail.com">kbwhittle88@gmail.com</a></p>
-          </div>
-
-        </div>
-
-        <hr>
-
-        <div class="footer-bottom">
-          <p>&copy; 2026 Kyle Whittle</p>
-          <div class="footer-social">
-            <a href="https://www.linkedin.com/in/kwhittle88" target="_blank" rel="noopener">LinkedIn &rarr;</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script src="js/scripts.js"></script>
+    </div></div>
   </body>
 </html>

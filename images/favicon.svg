@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 36">
+  <rect x="0" y="0" width="38" height="36" rx="3" fill="#161C24"/>
+  <path d="M36 5 H43 a3 3 0 0 1 3 3 V20 a3 3 0 0 1 -3 3 H36 Z" fill="#2448C9"/>
+  <text x="19" y="25.5" text-anchor="middle" font-family="Avenir Next Condensed, Roboto Condensed, Arial Narrow, sans-serif" font-weight="700" font-size="19" fill="#F5F6F2">KW</text>
+</svg>

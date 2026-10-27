@@ -1,10 +1,10 @@
 # CLAUDE.md
 
-**Before doing any work for Kyle:** read `SHARED-AI/ABOUT ME/` for context on who he is, how he writes, and what he cares about. That folder is the single source of truth across all projects.
+General rules for working with Kyle live in `~/.claude/CLAUDE.md`.
 
 ## What's here
 
-A personal portfolio site for Kyle Whittle — ops leader at a mid-market SaaS company. Audience is professional: hiring managers, peers, and collaborators who want to understand how he thinks and what he ships.
+A personal portfolio site for Kyle Whittle, Associate Director of Customer Knowledge and Content Strategy at Entrata. Open to select consulting engagements (no full-time job search). Audience is professional: peers, collaborators, and potential consulting clients who want to understand how he thinks and what he ships.
 
 | File | Purpose |
 |---|---|
@@ -31,17 +31,6 @@ Open files directly in a browser — no build step:
 open index.html
 ```
 
-## Shared files setup
-
-`SHARED-AI/` is a **symlink** pointing to `~/Claude Cowork/` on Kyle's Mac. The real files (`about-me.md`, `anti-ai-writing-style.md`, `my-company.md`) live there and are shared with the coaching site repo.
-
-**To recreate the symlink on a new machine:**
-```
-ln -s ~/Claude\ Cowork ~/portfolio-site/SHARED-AI
-```
-
-Add `SHARED-AI` to `.gitignore` — the symlink should not be committed.
-
 ## Conventions
 
 - Pure HTML/CSS, no build step
@@ -53,4 +42,6 @@ Add `SHARED-AI` to `.gitignore` — the symlink should not be committed.
 
 This is a professional site, not a resume. Kyle's writing is direct, specific, and opinionated. No buzzwords. No corporate filler. Every page should sound like a smart person talking — not a LinkedIn post.
 
-Read `SHARED-AI/ABOUT ME/anti-ai-writing-style.md` before writing or editing any copy on this site.
+General writing rules live in `~/.claude/CLAUDE.md`. For this site, also:
+- Be specific: real numbers, real projects, real outcomes.
+- Before finishing, reread the copy and ask: does this sound like Kyle, or like an AI imitating him?
