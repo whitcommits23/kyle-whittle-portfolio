@@ -4,7 +4,7 @@ General rules for working with Kyle live in `~/.claude/CLAUDE.md`.
 
 ## What's here
 
-A personal portfolio site for Kyle Whittle, Senior Manager of Customer Knowledge and Content Operations at Entrata. Open to select consulting engagements (no full-time job search). Audience is professional: peers, collaborators, and potential consulting clients who want to understand how he thinks and what he ships.
+A personal portfolio site for Kyle Whittle, Senior Manager of Customer Education at Qualia and former content ops lead at Entrata. Open to select consulting engagements (no full-time job search). Audience is professional: peers, collaborators, and potential consulting clients who want to understand how he thinks and what he ships.
 
 | File | Purpose |
 |---|---|
